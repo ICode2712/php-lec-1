@@ -8,6 +8,11 @@
 <body>
     
     <?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+
+
     echo "Hi Future Developers! <br>";
 
     $name = "Imran Hoshen <br>";
@@ -52,7 +57,7 @@
     $fruits = ["Mango", "Banana", "Pineapple"];
     echo "$fruits[0]<br>";
 
-    $user1 = new User();
+    //$user1 = new User();
 
     $variable = NULL;
     //$file = fopen("test.txt", "r");
@@ -61,8 +66,8 @@
     echo is_int($price);
 
     //Arithmetic Operator
-    $a = 10;
-    $b = 20;
+    $a = 100;
+    $b = 10;
     $addition = $a + $b;
     $subtraction = $a - $b;
     $multiplication = $a * $b;
@@ -70,15 +75,29 @@
     $modulus = $a % $b;
     $exponentiation = $a ** $b;
 
-    echo "$addition";
-    echo "$subtraction";
-    echo "$multiplication";
-    echo "$division";
-    echo "$modulus";
-    echo "$exponentiation";
+    echo "$addition<br>";
+    echo "$subtraction<br>";
+    echo "$multiplication<br>";
+    echo "$division<br>";
+    echo "$modulus<br>";
+    echo "$exponentiation<br>";
 
     //Assignment Operator
-    //$a = 10;
+    $a += 2;    //$a = $a + 2;
+    echo "$a<br>";
+
+    $a -= 2;    //$a = $a - 2;
+    echo "$a<br>";
+
+    $a *= 2;    //$a = $a * 2;
+    echo "$a<br>";
+
+    $a /= 2;    //$a = $a / 2;
+    echo "$a<br>";
+    
+    $a %= 2;    //$a = $a % 2;
+    echo "$a<br>";
+
 
     ?>
 
